@@ -1,0 +1,118 @@
+* Sat Apr 10 2010 Anas Nashif <anas.nashif@intel.com> - 0.86
+- Fixed rpmlint errors
+
+* Fri Mar 26 2010 Anas Nashif <anas.nashif@intel.com> - 0.86
+- Remove Epoch
+
+* Tue Jan 12 2010 Yin Kangkai <kangkai.yin@intel.com> 0.86
+- Upgrade to 0.86.
+
+* Fri Jul 24 2009 Austin Zhang <austin.zhang@intel.com> 0.84
+- Correct the path for finding usb.ids.
+
+* Wen Jul 2 2009 Austin Zhang <austin.zhang@intel.com> 0.84
+- Add pc file for right pkgconfig checking.
+
+* Wen Jul 1 2009 Austin Zhang <austin.zhang@intel.com> 0.84
+- Updated to 0.84 because udeve-143 is asking higher version.
+
+* Tue Dec 16 2008 Yi Yang <yi.y.yang@intel.com> 0.73
+- Add it into Moblin 2.0
+
+* Tue Feb 12 2008 Jiri Moskovcak <jmoskovc@redhat.com> 0.73-2
+- spec file cleanup
+
+* Thu Jan 17 2008 Jiri Moskovcak <jmoskovc@redhat.com> 0.73-1
+- new version 0.73
+
+* Mon Sep 18 2006 Thomas Woerner <twoerner@redhat.com> 0.72-1
+- new version 0.72
+- videoterminal (vt) patch is now upstream, dropped
+
+* Wed Jul 12 2006 Jesse Keating <jkeating@redhat.com> - 0.71-2.1
+- rebuild
+
+* Wed Mar 01 2006 Karsten Hopp <karsten@redhat.de> 1.71-2
+- add usbutils-0.71-VT.patch to fix warnings about unknown lines
+  (#176903)
+
+* Fri Feb 10 2006 Jesse Keating <jkeating@redhat.com> - 0.71-1.2
+- bump again for double-long bug on ppc(64)
+
+* Tue Feb 07 2006 Jesse Keating <jkeating@redhat.com> - 0.71-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* Tue Dec 13 2005 Thomas Woerner <twoerner@redhat.com> 0.71-1
+- new version 0.71
+
+* Fri Dec 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* Fri Apr 15 2005 Thomas Woerner <twoerner@redhat.com> 0.70-1.1
+- added fix from Robert Scheck to fix missing BuildRequires for libusb-devel 
+ (#155006)
+
+* Thu Apr 14 2005 Thomas Woerner <twoerner@redhat.com> 0.70-1
+- new version 0.70
+
+* Thu Jan 20 2005 David Woodhouse <dwmw2@redhat.com> 0.11-6.2
+- Don't byteswap parts of device descriptor which kernel already swapped
+
+* Mon Sep 13 2004 Thomas Woerner <twoerner@redhat.com> 0.11-6.1
+- added missing BuildRequires for libtool (#132406)
+
+* Wed Sep  1 2004 Thomas Woerner <twoerner@redhat.com> 0.11-6
+- added patch from Aurelien Jarno for unknown HID Country Code entries in
+  usb.ids (#127415)
+
+* Tue Jun 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* Tue May  4 2004 Bill Nottingham <notting@redhat.com> 0.11-4
+- add patch from USB maintainer to fix various brokenness (#115694, <david-b@pacbell.net>)
+
+* Fri Feb 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* Wed Jun 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* Tue Jun  3 2003 Jeff Johnson <jbj@redhat.com>
+- add explicit epoch's where needed.
+
+* Mon May 19 2003 Bill Nottingham <notting@redhat.com> 0.11-1
+- update to 0.11, fixes #90640
+- add patch to fix some warnings (#78462, <d.binderman@virgin.net>)
+
+* Wed Jan 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* Fri Nov 29 2002 Tim Powers <timp@redhat.com> 0.9-9
+- remove unpackaged files from the buildroot
+
+* Wed Nov 20 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- exclude mainframe
+
+* Fri Jun 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* Thu May 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* Thu Mar 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-5
+- Fix conflict check
+
+* Mon Mar 18 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-4
+- Conflict with older versions of hotplug which contained
+  parts of this package (#60615)
+
+* Fri Feb 22 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-3
+- Rebuild
+
+* Wed Jan 30 2002 Bill Nottingham <notting@redhat.com> 0.9-2
+- require hwdata
+
+* Wed Jan 16 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-1
+- Initial RPM
+- make it build on ia64
+

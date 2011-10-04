@@ -1,0 +1,8 @@
+<package project="Mer:Trunk:Base" name="usbutils">
+  <title>Linux USB utilities</title>
+  <description>This package contains utilities for inspecting devices connected to a
+USB bus.
+
+</description>
+  <url>http://www.linux-usb.org/</url>
+</package>
