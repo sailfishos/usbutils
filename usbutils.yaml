@@ -1,0 +1,34 @@
+Name: usbutils
+Summary: Linux USB utilities
+Version: 005
+Release: 1
+Group: Applications/System
+License: GPLv2+
+URL: http://www.linux-usb.org/
+Sources:
+    # http://www.kernel.org/pub/linux/utils/usb/usbutils/
+    # https://github.com/gregkh/usbutils/tarball/v005
+    - gregkh-usbutils-v005-0-g90d96a3.tar.gz
+    - usbhid-dump-1.3.tar.bz2
+    - usbutils-rpmlintrc
+Patches:
+    - usbutils-003-hwdata.patch
+    - usbutils-make-hwdata.patch
+Description: |
+    This package contains utilities for inspecting devices connected to a
+    USB bus.
+
+Requires:
+    - hwdata
+PkgConfigBR:
+    - libusb-1.0
+PkgBR:
+    - autoconf
+    - libtool
+Configure: configure
+ConfigOptions:
+    - --sbindir=%{_sbindir}
+Builder: make
+
+AutoSubPackages:
+    - devel
