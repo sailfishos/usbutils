@@ -9,7 +9,7 @@ Name:       usbutils
 # << macros
 
 Summary:    Linux USB utilities
-Version:    006
+Version:    007
 Release:    1
 Group:      Applications/System
 License:    GPLv2+
@@ -17,8 +17,11 @@ URL:        http://www.linux-usb.org/
 Source0:    http://www.kernel.org/pub/linux/utils/usb/usbutils/%{name}-%{version}.tar.xz
 Source1:    usbutils-rpmlintrc
 Source100:  usbutils.yaml
+Source101:  usbutils-007.tar.sign
 Patch0:     usbutils-006-hwdata.patch
 Patch1:     usbutils-make-hwdata.patch
+Patch2:     02-ccid-typo.patch
+Patch3:     lsusb-t-segfault.patch
 Requires:   hwdata
 BuildRequires:  pkgconfig(libusb-1.0)
 BuildRequires:  autoconf
@@ -45,6 +48,10 @@ Development files for %{name}.
 %patch0 -p1
 # usbutils-make-hwdata.patch
 %patch1 -p1
+# 02-ccid-typo.patch
+%patch2 -p1
+# lsusb-t-segfault.patch
+%patch3 -p1
 # >> setup
 # << setup
 

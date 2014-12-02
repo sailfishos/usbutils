@@ -1,0 +1,15 @@
+Author: Erwan Prioul <erwan@linux.vnet.ibm.com>
+Description: Fix a segfault with lsusb -t when /sys/bus/usb/devices is empty
+Bug-Debian: http://bugs.debian.org/742785
+
+--- a/lsusb-t.c	2013-06-06 19:13:12.000000000 -0400
++++ b/lsusb-t.c	2014-03-27 07:39:56.075336155 -0400
+@@ -605,6 +605,7 @@
+ 	/* need to reverse sort bus numbers */
+ 	struct usbbusnode *t, *p, **pp;
+ 	int swapped;
++	if (!usbbuslist) return;
+ 	do {
+ 		p = usbbuslist;
+ 		pp = &usbbuslist;
+
