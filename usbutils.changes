@@ -1,3 +1,6 @@
+* Tue Dec 2 2014 Davide Bettio <davide.bettio@ispirata.com> - 007
+- Update to version 007
+
 * Thu Sep 13 2012 Marko Saukko <marko.saukko@jollamobile.com> - 006
 - Update to version 006
 - dropped usbhid-dump-1.3.tar.bz2 that is merged to upstream.
