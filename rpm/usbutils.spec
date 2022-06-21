@@ -3,7 +3,7 @@ Summary:    Linux USB utilities
 Version:    014
 Release:    1
 License:    GPLv2+
-URL:        http://www.linux-usb.org/
+URL:        https://github.com/sailfishos/usbutils
 Source0:    %{name}-%{version}.tar.xz
 Requires:   hwdata
 BuildRequires:  pkgconfig(libusb-1.0)
