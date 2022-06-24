@@ -4,7 +4,7 @@ Version:    008
 Release:    1
 Group:      Applications/System
 License:    GPLv2+
-URL:        http://www.linux-usb.org/
+URL:        https://github.com/sailfishos/usbutils
 Source0:    %{name}-%{version}.tar.xz
 Source1:    usbutils-rpmlintrc
 Patch0:     usbutils-006-hwdata.patch
